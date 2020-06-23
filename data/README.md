@@ -1,0 +1,1 @@
+Folder for left or right knee radiographs of the patients that will be used for training. Once the `./ExtractKnee/preprocessing.py` file is executed this folder will be populated by radiographs defined in `./ExtractKnee/output_00m.csv` file.
