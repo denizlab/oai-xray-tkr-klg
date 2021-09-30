@@ -32,9 +32,9 @@ Column `file_path` is where radiographs are stored as a DICOM  file. The second 
 You can use `preprocessing.py` to generate right and left knee images of size knee joint area with size 1024×1024 in HDF5 file format from bilateral PA fixed-flexion knee radiograph DICOMs. Example use would be: 
 ```bash
 # this code will use 'output_00m.csv' to generate single knee image dataset.
-python preprocessing.py -m 00m --content ./output_00m.csv --output-dir ../data/
+python preprocessing.py --input-dir ../data-raw -m 00m --content ./output_00m.csv --output-dir ../data/
 ```
-`-m` sets the sub-folder name for where you want to save HDF5 files. `--content` gives path for annotation files. `--output-dir` is the folder where you want to save images with the subfolder from `-m`.
+`--input-dir` sets the root folder where the DICOM file are stored. `-m` sets the sub-folder name for where you want to save HDF5 files. `--content` gives path for annotation files. `--output-dir` is the folder where you want to save images with the subfolder from `-m`.
 
 ## Training a DL model
 You can use this repo to train models for predicting TKR outcome and KL grade. Default parameters are defined within `train_TL_nestedCV_strata.py` file. So, you directly run the following script to train DL models with nested cross-validation. 
