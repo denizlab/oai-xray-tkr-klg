@@ -44,7 +44,7 @@ python train_TL_nestedCV_strata.py
 Please see the arguments in the .py file to make input argument changes if you need. 
 
 ## Inference
-Once you download pretrained model weights from [here](https://drive.google.com/file/d/1Ovf4KpZ0pjEyDstt7fA7HNQkcN7fg2Vj/view?usp=sharing) to the `./ModelWeights` folder, you can use the following script to obtain predictions of TKR and KL grade for a specific single knee radiograph (e.g. for the left knee of patient with ID=9011918):
+Once you download pretrained model weights from [here](https://zenodo.org/doi/10.5281/zenodo.11479343) to the `./ModelWeights` folder, you can use the following script to obtain predictions of TKR and KL grade for a specific single knee radiograph (e.g. for the left knee of patient with ID=9011918):
 ```bash
 python inference.py --filename ./data/00m/9011918_00m_LEFT_KNEE.hdf5
 ```
