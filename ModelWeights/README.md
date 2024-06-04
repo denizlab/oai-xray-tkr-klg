@@ -1,1 +1,1 @@
-Please download and save [the trained model weights](https://drive.google.com/file/d/1Ovf4KpZ0pjEyDstt7fA7HNQkcN7fg2Vj/view?usp=sharing) used in this study under this folder. 
+Please download and save [the trained model weights](https://zenodo.org/doi/10.5281/zenodo.11479343) used in this study under this folder. 
