@@ -48,7 +48,7 @@ Once you download pretrained model weights from [here](https://zenodo.org/doi/10
 ```bash
 python inference.py --filename ./data/00m/9011918_00m_LEFT_KNEE.hdf5
 ```
-The output of this script will provide the predictions of TKR and KL grades as shown below.
+The output of this script will provide the predictions of TKR and KL grades as shown below. You can use threshold of 0.3802338 to identify TKR label of 0/1.
 ```
 --- Inference Results ---
 Predictions for ** 9011918_00m_LEFT_KNEE.hdf5 **
